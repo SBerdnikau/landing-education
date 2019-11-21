@@ -1,6 +1,55 @@
-$education__bg: #6c0cff;
-
 .education{
-  background: url('../images/bg.jpg') $education__bg;
+  background: url('../images/bg.jpg') top center no-repeat $first;
   background-size: 100%;
+}
+
+.education__info{
+  flex-basis: 550px;
+}
+
+.education__courses{
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 145px;
+  justify-content: space-between;
+}
+
+.education__title{
+  font-size: 70px;
+  font-family: "Raleway Bold",sans-serif;
+  color: $white;
+  line-height: 1.071;
+  margin:  0 0 40px 0;
+}
+
+.education__description{
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  color: $white;
+  line-height: 1.765;
+  margin: 0 0 45px 0;
+}
+
+.education__imgCourses{
+  flex-basis: 730px;
+  position: absolute;
+}
+
+.imgCourses__img{
+  position: relative;
+  bottom: 45px;
+  left: 492px;
+}
+
+.imgCourses__list{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imgCourses__item{
+  border: 1px solid $black;
 }

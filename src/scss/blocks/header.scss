@@ -1,0 +1,40 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.header__logo{
+  flex-basis: 515px;
+}
+
+.header__list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item{
+  margin-right: 55px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: $white;
+  line-height: 3.611;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+
+}

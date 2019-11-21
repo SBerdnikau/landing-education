@@ -45,27 +45,28 @@
   overflow: hidden;
 }
 
-//@mixin button($background: $second, $borderColor: transparent){
-//  border-radius: 5px;
-//  background-color: $background;
-//  width: 170px;
-//  height: 54px;
-//  color: $white;
-//  font-size: 14px;
-//  font-weight: 800;
-//  text-transform: uppercase;
-//  text-align: center;
-//  display: block;
-//  cursor: pointer;
-//  box-shadow: none;
-//  appearance: none; //поведение кнопки
-//  border: 2px solid $borderColor;
-//  transition-property: background-color, border-color;
-//  transition-duration: 500ms;
-//  @content;
-//
-//  &:hover, &:active{
-//    background-color: darken($background,15%);
-//    border-color: darken($borderColor,15%);
-//  }
-//}
+@mixin button($background: $second, $setWidth: 120px, $borderColor: transparent){
+  background-color: $background;
+  width: $setWidth;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1;
+  height: 45px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 22.5px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border: 0;
+  box-shadow: none;
+  appearance: none; //поведение кнопки
+  transition-property: background-color;
+  transition-duration: 500ms;
+  @content;
+
+  &:hover, &:active{
+    background-color: darken($background,15%);
+    border-color: darken($borderColor,15%);
+  }
+}
