@@ -1,0 +1,8 @@
+.contact__title--hide{
+  @include visually-hidden();
+}
+
+.contact__wrap{
+  display: flex;
+  justify-content: space-between;
+}
